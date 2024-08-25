@@ -1,0 +1,43 @@
+/* 1.basic styles */
+
+/* footer styles */
+
+
+/* basic styles start */
+* {
+  padding: 0;
+  margin: 0;
+}
+/* basic styles end */
+/* footer styles start */
+.footer {
+  padding: 2rem 0;
+  width: 100%;
+  background-color: rgb(4, 4, 56);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-right,
+.footer-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  height: auto;
+}
+
+.logo {
+  width: 195px;
+  height: 70px;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+}
+
+.footer-author {
+  text-align: center;
+  font-size: 18px;
+  color: #fdfdfd;
+  text-shadow: #272727 1px 1px 1px;
+}
+/* footer styles end */
