@@ -1,5 +1,5 @@
 :root {
-  --bg-color: rgb(4, 4, 56);
+  --dark-color: rgb(4, 4, 56);
   --text-light: #fdfdfd;
 }
 
@@ -26,7 +26,7 @@ html {
   display: flex;
   justify-content: space-between;
   padding: 2.5rem;
-  background-color: var(--bg-color);
+  background-color: var(--dark-color);
 }
 
 .logo-text {
@@ -62,13 +62,25 @@ html {
   width: 20rem;
   height: 12rem;
 }
+
+.show-more-btn {
+  margin: 3rem auto;
+  padding: 1rem;
+  color: var(--text-light);
+  background-color: var(--dark-color);
+}
+
+.show-more-btn:hover {
+  background-color: transparent;
+  color: var(--dark-color);
+}
 /* main styles end */
 
 /* footer styles start */
 .footer {
   padding: 2rem 0;
   width: 100%;
-  background-color: var(--bg-color);
+  background-color: var(--dark-color);
   display: flex;
   justify-content: space-between;
 }
