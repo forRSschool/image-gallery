@@ -1,19 +1,54 @@
+:root {
+  --bg-color: rgb(4, 4, 56);
+  --text-light: #fdfdfd;
+}
+
 /* 1.basic styles */
 
 /* footer styles */
 
 
 /* basic styles start */
+html {
+  scrollbar-color: rgb(4, 4, 56) rgb(251, 251, 255);
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 /* basic styles end */
+
+/* header styles start */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+  background-color: var(--bg-color);
+}
+
+.logo-text {
+  color: var(--text-light);
+}
+
+.search__input {
+  line-height: 2rem;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.search__button {
+  color:  rgb(4, 4, 56);
+  padding: 0.7rem;
+  cursor: pointer;
+}
+/* header styles end */
+
 /* footer styles start */
 .footer {
   padding: 2rem 0;
   width: 100%;
-  background-color: rgb(4, 4, 56);
+  background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
 }
@@ -35,9 +70,9 @@
 }
 
 .footer-author {
+  color: var(--text-light);
   text-align: center;
   font-size: 18px;
-  color: #fdfdfd;
   text-shadow: #272727 1px 1px 1px;
 }
 /* footer styles end */
