@@ -17,6 +17,11 @@ async function fetchData() {
     const res = await fetch(`https://api.unsplash.com/search/photos?client_id=${key}&page=${page}&query=${query}&per_page=12`);
     let parseData = await res.json();
     let data = parseData.results;
+    if(!data.length) {
+      gallery.innerHTML = 'No data...'
+      gallery.style.height = '80vh'
+    }
+
     data.map((result) => {
       const img = document.createElement('img');
       img.src = result.urls.small;
@@ -26,6 +31,7 @@ async function fetchData() {
 
       imgLink.append(img);
       gallery.append(imgLink);
+      gallery.style.height = '';
     }) 
     showMoreBtn.style.display = 'block'; 
   } catch(err) {
