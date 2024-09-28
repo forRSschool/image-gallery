@@ -40,6 +40,12 @@ html {
   padding: 5px;
 }
 
+.search__button:hover {
+    transform: scale(.8);
+    border: 1px solid var(--text-light);
+    background-color: transparent;
+    color: var(--text-light);
+} 
 .search__button {
   color:  rgb(4, 4, 56);
   padding: 0.7rem;
