@@ -18,8 +18,9 @@ async function fetchData() {
     let parseData = await res.json();
     let data = parseData.results;
     if(!data.length) {
-      gallery.innerHTML = 'No data...'
-      gallery.style.height = '80vh'
+      gallery.innerHTML = 'No data...';
+      gallery.style.height = '80vh';
+      showMoreBtn.style.display = 'none';
     }
 
     data.map((result) => {
@@ -33,7 +34,7 @@ async function fetchData() {
       gallery.append(imgLink);
       gallery.style.height = '';
     }) 
-    showMoreBtn.style.display = 'block'; 
+    if(data.length) showMoreBtn.style.display = 'block'; 
   } catch(err) {
     console.log('error' + err)
   }

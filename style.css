@@ -76,6 +76,7 @@ html {
   padding: 1rem;
   color: var(--text-light);
   background-color: var(--dark-color);
+  display: none;
 }
 
 .show-more-btn:hover {
