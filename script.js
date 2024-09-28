@@ -18,7 +18,10 @@ async function fetchData() {
     let parseData = await res.json();
     let data = parseData.results;
     if(!data.length) {
-      gallery.innerHTML = 'No data...';
+      const img = document.createElement('img');
+      img.style.cssText = 'with: 80%; height: 80%'
+      img.src = './img/no-results.png'
+      gallery.append(img);
       gallery.style.height = '80vh';
       showMoreBtn.style.display = 'none';
     }
